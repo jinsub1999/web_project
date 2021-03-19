@@ -1,0 +1,29 @@
+.my_scrollbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 300px;
+  width: 500px;
+}
+
+.my_scrollbar::-webkit-scrollbar {
+  width: 40px;
+}
+
+.my_scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 2px solid black;
+  background-clip: padding-box;
+  background-color: var(--text-color);
+}
+
+.my_scrollbar::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: rgba(179, 179, 179, 0.5);
+  border: 11px solid transparent;
+}
