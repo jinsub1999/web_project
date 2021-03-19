@@ -50,7 +50,7 @@ body {
   animation: flashingText 3s ease-in-out infinite;
 }
 
-@media screen and (min-width: 700px) and (min-height: 700px) {
+@media screen and (min-width: 450px) and (min-height: 500px) {
   .reached_min_size {
     display: none;
   }
