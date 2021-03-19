@@ -1,17 +1,29 @@
 @import "./reset.css";
 @import "./variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 /* Components */
-
 @import "./components/user_info.css";
 
 /* Screens */
+@import "./screens/index.css";
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.my-button-style {
+  color: var(--href-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.my-button-style:hover {
+  background-color: var(--href-hovercolor);
 }
 
 .poweredBy {
+  font-family: Georgia, "Times New Roman", Times, serif;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -19,12 +31,15 @@ a {
   font-weight: bolder;
 }
 
-body {
+.main_screen {
+  width: 100vw;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: "Open Sans", "Nanum Gothic", sans-serif;
 }
 
 @keyframes flashingText {

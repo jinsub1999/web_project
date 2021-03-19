@@ -7,8 +7,8 @@
   height: 100px;
   background-color: var(--block-background);
   padding: 10px 20px;
-  border: 3px solid seagreen;
-  margin: 20px;
+  border: 3px solid var(--block-border-color);
+  margin: 8px 0px;
 }
 
 .user_info__column:first-child {
@@ -17,9 +17,15 @@
 }
 
 .user_info__name {
+  color: var(--text-color);
+  background-color: var(--text-bgcolor);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  padding: 0px 10px;
 }
 
 .user_info__column i {
@@ -32,7 +38,7 @@
 }
 
 .user_info__column i:hover {
-  background-color: rgb(51, 94, 122);
+  background-color: rgb(66, 109, 138);
 }
 
 .user_info__pic {
