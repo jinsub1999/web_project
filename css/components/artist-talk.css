@@ -2,11 +2,11 @@
   background-color: wheat;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 700px;
-  height: 350px;
+  width: 800px;
+  height: 400px;
   border: 10px solid rgba(97, 64, 110, 0.466);
   border-radius: 10px;
 }
@@ -38,7 +38,8 @@
   display: flex;
 
   height: 200px;
-  width: 280px;
+  width: 300px;
+  margin: 0px 20px;
 }
 
 .artist-talk__artist {
@@ -46,13 +47,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 40%;
   height: 90%;
   padding: 10px;
   border-radius: 20px;
   background-color: slategrey;
   border: 1px solid slateblue;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .artist-talk__pic {
@@ -72,6 +73,7 @@
   margin: 0px 10px;
   border-radius: 20px;
   padding: 0px 10px;
+  box-sizing: border-box;
 }
 
 .artist-talk__name-text {
@@ -80,8 +82,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 90%;
+  width: 130px;
   height: 20px;
+  box-sizing: border-box;
 }
 
 .artist-talk__talks {
@@ -89,10 +92,67 @@
   justify-content: center;
   align-items: center;
   height: 95%;
-  width: 45%;
+  width: 410px;
 }
 
 .artist_scrollbar {
-  height: 80%;
-  width: 70%;
+  position: relative;
+  box-sizing: border-box;
+  height: 95%;
+  width: 95%;
+}
+
+.review-input {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 315px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 60;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.review-input #comment {
+  height: 70%;
+  width: 50%;
+}
+.review-input img {
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.review-input__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.review-input label[for="user_pic"] {
+  border: 1px solid black;
+  margin: 5px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 20px;
+  font-size: 12px;
+  z-index: 1;
+}
+.review-input #user_pic {
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 6px;
+  z-index: 0;
 }

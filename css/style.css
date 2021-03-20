@@ -37,6 +37,13 @@ a {
   font-family: "Open Sans", "Nanum Gothic", sans-serif;
 }
 
+.screen_title {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: 600;
+}
+
 @keyframes flashingText {
   0% {
     color: skyblue;
