@@ -5,7 +5,7 @@ function isMobile() {
 }
 
 let artist_picture = document.querySelector(".artist-talk__pic");
-let artist_tomelon = document.querySelector(".artist-talk__gotomelon a");
+let artist_tomelon = document.querySelector(".artist-talk__artist a");
 let artist_name = document.querySelector(".artist-talk__name-text");
 let artistID = 123123;
 
