@@ -8,6 +8,7 @@
   overflow-y: scroll;
   height: 300px;
   width: 500px;
+  background-color: var(--green-background-color);
 }
 
 .my_scrollbar::-webkit-scrollbar {

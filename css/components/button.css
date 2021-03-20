@@ -1,0 +1,16 @@
+.my-button-style {
+  color: var(--href-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.my-btn-black {
+  color: black;
+}
+
+.my-button-style:hover {
+  background-color: var(--href-hovercolor);
+}
+
+.current-btn {
+  background-color: var(--green-background-color);
+}

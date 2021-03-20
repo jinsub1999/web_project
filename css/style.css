@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 /* Components */
+@import "./components/button.css";
 @import "./components/scrollbar.css";
 @import "./components/user_info.css";
+@import "./components/status-bar.css";
 
 /* Screens */
 @import "./screens/index.css";
@@ -12,15 +14,6 @@
 a {
   text-decoration: none;
   color: black;
-}
-
-.my-button-style {
-  color: var(--href-color);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.my-button-style:hover {
-  background-color: var(--href-hovercolor);
 }
 
 .poweredBy {
@@ -55,7 +48,6 @@ a {
   }
 }
 
-/*
 .reached_min_size {
   z-index: 99;
   top: 0px;
@@ -71,9 +63,8 @@ a {
   animation: flashingText 3s ease-in-out infinite;
 }
 
-@media screen and (min-width: 450px) and (min-height: 500px) {
+@media screen and (min-width: 1024px) and (min-height: 700px) {
   .reached_min_size {
     display: none;
   }
 }
-*/
