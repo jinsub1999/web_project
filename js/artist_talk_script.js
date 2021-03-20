@@ -26,12 +26,12 @@ for (var i = 0; i < get_link2.length; i++) {
     if (isMobile()) {
       artist_tomelon.setAttribute(
         "href",
-        "https://m2.melon.com/artist/detail.htm?artistId=" + attr_property
+        "https://m2.melon.com/artist/album.htm?artistId=" + attr_property
       );
     } else {
       artist_tomelon.setAttribute(
         "href",
-        "https://www.melon.com/artist/detail.htm?artistId=" + attr_property
+        "https://www.melon.com/artist/album.htm?artistId=" + attr_property
       );
     }
   }
