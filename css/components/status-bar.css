@@ -1,6 +1,6 @@
 .status-bar {
   background-color: lightcyan;
-  height: 70px;
+  height: 50px;
   width: 100vw;
   display: flex;
   position: fixed;
@@ -9,6 +9,7 @@
   top: 0px;
   border-bottom: 3px solid black;
   padding: 30px;
+  z-index: 99;
 }
 
 .status-bar__btn {
@@ -16,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 25%;
   height: 100%;
   border-radius: 10px;
   padding: 15px;
