@@ -7,6 +7,7 @@
 @import "./components/scrollbar.css";
 @import "./components/user_info.css";
 @import "./components/status-bar.css";
+@import "./components/artist-talk.css";
 
 /* Screens */
 @import "./screens/index.css";
