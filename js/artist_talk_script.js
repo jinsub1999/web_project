@@ -1,5 +1,8 @@
-"artist-talk__pic";
-"artist-talk__name-text";
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
 
 let artist_picture = document.querySelector(".artist-talk__pic");
 let artist_tomelon = document.querySelector(".artist-talk__gotomelon a");
@@ -20,9 +23,16 @@ for (var i = 0; i < get_link2.length; i++) {
     artist_picture.setAttribute("src", attr_property);
   }
   if (attr_name == "artistid") {
-    artist_tomelon.setAttribute(
-      "href",
-      "https://www.melon.com/artist/detail.htm?artistId=" + attr_property
-    );
+    if (isMobile()) {
+      artist_tomelon.setAttribute(
+        "href",
+        "https://m2.melon.com/artist/detail.htm?artistId=" + attr_property
+      );
+    } else {
+      artist_tomelon.setAttribute(
+        "href",
+        "https://www.melon.com/artist/detail.htm?artistId=" + attr_property
+      );
+    }
   }
 }
