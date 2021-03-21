@@ -108,7 +108,8 @@
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  width: 315px;
+  width: 310px;
+  margin-left: 5px;
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
@@ -119,8 +120,9 @@
 }
 
 .review-input #comment {
-  height: 70%;
-  width: 50%;
+  word-break: break-all;
+  height: 65px;
+  width: 125px;
 }
 .review-input img {
   height: 64px;

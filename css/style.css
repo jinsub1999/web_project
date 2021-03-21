@@ -1,7 +1,6 @@
 @import "./reset.css";
 @import "./variables.css";
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 /* Components */
 @import "./components/button.css";
 @import "./components/scrollbar.css";
@@ -11,6 +10,7 @@
 
 /* Screens */
 @import "./screens/index.css";
+@import "./screens/music-player.css";
 
 a {
   text-decoration: none;
@@ -34,12 +34,12 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Open Sans", "Nanum Gothic", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .screen_title {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 42px;
   font-weight: 600;
 }

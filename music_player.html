@@ -9,18 +9,21 @@
       src="https://kit.fontawesome.com/ff058a956c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Music Talk</title>
+    <title>Music Talk > Music Player</title>
   </head>
   <body class="main_screen">
-    <header class="screen_title">Music Talk</header>
+    <header class="screen_title">Music Player</header>
 
     <div class="status-bar">
-      <a href="./music_player.html" class="status-bar__btn current-btn">
+      <a
+        href="./artist_info.html"
+        class="status-bar__btn my-button-style my-btn-black"
+      >
         <div>
           <i class="far fa-comments fa-3x"></i>
         </div>
       </a>
-      <a href="#" class="status-bar__btn my-button-style my-btn-black">
+      <a href="./music_player.html" class="status-bar__btn current-btn">
         <div>
           <i class="fas fa-music fa-3x"></i>
         </div>
@@ -31,77 +34,101 @@
         </div>
       </a>
     </div>
-    <div class="my_scrollbar">
-      <div class="user_info">
-        <div class="user_info__column">
-          <img
-            class="user_info__pic"
-            src="https://cdnimg.melon.co.kr/cm2/photo/images/000/801/21/135/80121135_20201214104534_org.jpg/melon/quality/80/optimize"
-          />
-          <div class="user_info__name">
-            <p class="user_info__name-text">윤덕원(브로콜리너마저)</p>
-          </div>
-        </div>
-        <div class="user_info__column">
-          <a
-            href="./artist_talk.html?artistid=774718&artistname=윤덕원(브로콜리너마저)&imgsrc=https://cdnimg.melon.co.kr/cm2/photo/images/000/801/21/135/80121135_20201214104534_org.jpg/melon/quality/80/optimize"
-            ><i class="fas fa-chevron-right fa-2x"></i
-          ></a>
-        </div>
-      </div>
-      <div class="user_info">
-        <div class="user_info__column">
-          <img
-            class="user_info__pic"
-            src="https://cdnimg.melon.co.kr/cm2/photo/images/000/800/98/621/80098621_20200508101031_org.jpg/melon/quality/80/optimize"
-          />
-          <div class="user_info__name">
-            <p class="user_info__name-text">아이유</p>
-          </div>
-        </div>
-        <div class="user_info__column">
-          <a
-            href="./artist_talk.html?artistid=261143&artistname=아이유&imgsrc=https://cdnimg.melon.co.kr/cm2/photo/images/000/800/98/621/80098621_20200508101031_org.jpg/melon/quality/80/optimize"
-            ><i class="fas fa-chevron-right fa-2x"></i
-          ></a>
-        </div>
-      </div>
-      <div class="user_info">
-        <div class="user_info__column">
-          <img
-            class="user_info__pic"
-            src="https://cdnimg.melon.co.kr/cm2/photo/images/000/801/21/131/80121131_20201214104457_org.jpg"
-          />
-          <div class="user_info__name">
-            <p class="user_info__name-text">브로콜리너마저</p>
-          </div>
-        </div>
+    <div class="music-player__screen">
+      <div class="music-player">
+        <span></span>
 
-        <div class="user_info__column">
-          <a
-            href="./artist_talk.html?artistid=230490&artistname=브로콜리너마저&imgsrc=https://cdnimg.melon.co.kr/cm2/photo/images/000/801/21/131/80121131_20201214104457_org.jpg"
-            ><i class="fas fa-chevron-right fa-2x"></i
-          ></a>
+        <img
+          src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/321/723/81321723_1575013966692_1_600x600.JPG/dims/resize/Q_80,0"
+        />
+        <div class="playing_music_title_box">
+          <span class="playing_music_title">Meteor</span>
+        </div>
+        <div class="playing_music_artist_box">
+          <span class="playing_music_artist">CHANGMO</span>
+        </div>
+        <div class="music-player__control-bar">
+          <audio controls autoplay></audio>
         </div>
       </div>
-      <div class="user_info">
-        <div class="user_info__column">
+      <div class="my_scrollbar music_scrollbar">
+        <div class="music_player__music-box">
           <img
-            class="user_info__pic"
-            src="https://cdnimg.melon.co.kr/cm/photo/images/000/101/13/801/10113801_org.jpg/melon/quality/80/optimize"
+            src="https://i1.sndcdn.com/artworks-000555007947-s02pz7-t500x500.jpg"
           />
-          <div class="user_info__name">
-            <p class="user_info__name-text">The Strokes</p>
+          <div class="music_title_box">
+            <span class="music_title">Plastic love</span>
           </div>
+          <div class="music_artist_box">
+            <span class="music_artist">Maria Takeuchi</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
         </div>
-        <div class="user_info__column">
-          <a
-            href="./artist_talk.html?artistid=101138&artistname=The Strokes&imgsrc=https://cdnimg.melon.co.kr/cm/photo/images/000/101/13/801/10113801_org.jpg/melon/quality/80/optimize"
-            ><i class="fas fa-chevron-right fa-2x"></i
-          ></a>
+        <div class="music_player__music-box">
+          <img
+            src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/415/668/81415668_1586402715345_1_600x600.JPG"
+          />
+          <div class="music_title_box">
+            <span class="music_title">Ode to the mets</span>
+          </div>
+          <div class="music_artist_box">
+            <span class="music_artist">The Strokes</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="music_player__music-box">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/015/237/81015237_1514523853540_1_600x600.JPG/dims/resize/Q_80,0"
+          />
+          <div class="music_title_box">
+            <span class="music_title"
+              >Pass the Rhyme (Feat. Changmo & Dok2)</span
+            >
+          </div>
+          <div class="music_artist_box">
+            <span class="music_artist">수퍼비</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="music_player__music-box">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/321/723/81321723_1575013966692_1_600x600.JPG/dims/resize/Q_80,0"
+          />
+          <div class="music_title_box">
+            <span class="music_title">METEOR</span>
+          </div>
+          <div class="music_artist_box">
+            <span class="music_artist">창모 (CHANGMO)</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="music_player__music-box">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/200/160/80200160_1_600x600.JPG/dims/resize/Q_80,0"
+          />
+          <div class="music_title_box">
+            <span class="music_title">졸업</span>
+          </div>
+          <div class="music_artist_box">
+            <span class="music_artist">브로콜리너마저</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="music_player__music-box">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/015/062/810/15062810_1459848977616_1_600x600.JPG/dims/resize/Q_80,0"
+          />
+          <div class="music_title_box">
+            <span class="music_title">Paranoid Android</span>
+          </div>
+          <div class="music_artist_box">
+            <span class="music_artist">Radiohead</span>
+          </div>
+          <div class="play-it"><i class="fas fa-play"></i></div>
         </div>
       </div>
     </div>
+
     <div class="poweredBy">Powered By Melon.</div>
 
     <!-- <div class="reached_min_size">Your screen is too small.</div> -->
