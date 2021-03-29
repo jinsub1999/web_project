@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ff058a956c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Talk > Personal Settings</title>
+  </head>
+  <body class="main_screen">
+    <header class="screen_title">Personal Settings</header>
+
+    <div class="status-bar">
+      <a
+        href="./artist_info.html"
+        class="status-bar__btn my-button-style my-btn-black"
+      >
+        <div>
+          <i class="far fa-comments fa-3x"></i>
+        </div>
+      </a>
+      <a
+        href="./music_player.html"
+        class="status-bar__btn my-button-style my-btn-black"
+      >
+        <div>
+          <i class="fas fa-music fa-3x"></i>
+        </div>
+      </a>
+      <a href="./personal_settings.html" class="status-bar__btn current-btn">
+        <div>
+          <i class="fas fa-user-cog fa-3x"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="my_scrollbar personal_settings__scrollbar">
+
+
+    </div>
+    <div class="your_own_settings">
+      <div>
+        make your theme on your own
+      </div>
+      <div class="personal-settings-box">
+        <form class="personal-settings" method="GET">
+          <label for="personal-settings__bgcolor">background color</label>
+          <input id="personal-settings__bgcolor" type="color" name="bgcolor" />
+          <label for="personal-settings__bgcolor">text color</label>
+          <input id="personal-settings__txtcolor" type="color" name="txtcolor" />
+          <label for="personal-settings__bgcolor">statusbar color</label>
+          <input id="personal-settings__sbcolor" type="color" name="sbcolor" />
+          <button id="formSubmit">
+        </form>
+      </div>
+    </div>
+    
+    <div class="poweredBy">Powered By Melon.</div>
+
+    <!-- <div class="reached_min_size">Your screen is too small.</div> -->
+  </body>
+  <script src="./js/ps_script.js"></script>
+  <script src="./js/add_ps_refresh_script.js"></script>
+
+</html>
