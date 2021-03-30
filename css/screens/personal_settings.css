@@ -1,3 +1,52 @@
 .personal_settings__scrollbar {
   width: 400px;
+  margin: 10px;
+}
+
+.themebox {
+  display: flex;
+  background-color: var(--href-color);
+  position: relative;
+  width: 350px;
+  height: 150px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.themebox_apply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background-color: saddlebrown;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.themebox_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
+  width: 70px;
+  margin: 5px 10px;
+}
+.themebox_preview {
+  margin-top: 10px;
+  height: 20px;
+  width: 50px;
+  background-color: salmon;
+}
+.themebox_presetname {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
 }

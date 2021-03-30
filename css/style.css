@@ -44,6 +44,10 @@ a {
   font-size: 42px;
   font-weight: 600;
 }
+.screen_subtitle {
+  font-size: 30px;
+  color: rgb(87, 87, 87);
+}
 
 @keyframes flashingText {
   0% {
