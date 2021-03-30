@@ -1,6 +1,7 @@
 .my-button-style {
-  color: var(--href-color);
+  color: var(--second-color);
   transition: background-color 0.3s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .my-btn-black {
@@ -8,9 +9,5 @@
 }
 
 .my-button-style:hover {
-  background-color: var(--href-hovercolor);
-}
-
-.current-btn {
-  background-color: var(--green-background-color);
+  background-color: var(--third-color);
 }

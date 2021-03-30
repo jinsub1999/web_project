@@ -5,9 +5,9 @@
   justify-content: space-between;
   width: 350px;
   height: 100px;
-  background-color: var(--block-background);
+  background-color: var(--main-color);
   padding: 10px 20px;
-  border: 3px solid var(--block-border-color);
+  border: 3px solid var(--border-color);
   margin: 8px 0px;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .user_info__name {
-  color: var(--text-color);
-  background-color: var(--text-bgcolor);
+  color: black;
+  background-color: var(--third-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,13 +40,13 @@
   display: block;
   padding: 20px;
   border-radius: 20px;
-  color: var(--href-color);
+  color: var(--third-color);
   opacity: 0.4;
   transition: background-color 0.2s ease-in-out;
 }
 
 .user_info__column i:hover {
-  background-color: rgb(66, 109, 138);
+  background-color: var(--second-color);
 }
 
 .user_info__pic {

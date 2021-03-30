@@ -8,7 +8,7 @@
   overflow-y: scroll;
   width: 700px;
   height: 350px;
-  background-color: var(--green-background-color);
+  background-color: var(--third-color);
 }
 
 .my_scrollbar::-webkit-scrollbar {
@@ -17,9 +17,9 @@
 
 .my_scrollbar::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   background-clip: padding-box;
-  background-color: var(--text-color);
+  background-color: var(--second-color);
 }
 
 .my_scrollbar::-webkit-scrollbar-track {

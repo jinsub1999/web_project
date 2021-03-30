@@ -1,9 +1,6 @@
 :root {
-  --green-background-color: rgb(128, 170, 170);
-  --block-background: rgb(76, 128, 163);
-  --href-color: rgb(87, 202, 116);
-  --href-hovercolor: rgb(66, 109, 138);
-  --text-color: rgb(235, 255, 212);
-  --text-bgcolor: rgb(66, 109, 138);
-  --block-border-color: rgb(58, 158, 101);
+  --main-color: rgb(76, 128, 163);
+  --second-color: rgb(68, 139, 100);
+  --third-color: rgb(128, 170, 170);
+  --border-color: slateblue;
 }

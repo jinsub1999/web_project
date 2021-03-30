@@ -3,6 +3,7 @@ let otherBtn = document.querySelectorAll(".user_info__column a");
 let otherBtn2 = document.querySelectorAll(".artist-talk a");
 let precolorBtn = document.querySelector(".personal-settings");
 let colorBtn;
+
 if (precolorBtn != null) colorBtn = precolorBtn.children;
 let get_color = window.location.search
   .substring(1, window.location.search.length)
@@ -11,51 +12,55 @@ let get_color = window.location.search
 let get_only_color = [];
 for (var i = 0; i < get_color.length; i++) {
   let temp = get_color[i].split("=");
-  if (temp[0] == "bgcolor" || temp[0] == "txtcolor" || temp[0] == "sbcolor")
+  if (
+    temp[0] == "maincolor" ||
+    temp[0] == "secondcolor" ||
+    temp[0] == "thirdcolor"
+  )
     get_only_color.push(temp);
 }
 
-let bgcolor = "";
-let txtcolor = "";
-let sbcolor = "";
+let maincolor = "";
+let secondcolor = "";
+let thirdcolor = "";
 // applying color
 for (var i = 0; i < get_only_color.length; i++) {
   myattr = get_only_color[i];
   attr_name = myattr[0];
   attr_property = myattr[1];
-  if (attr_name == "bgcolor") {
+  if (attr_name == "maincolor") {
     document.documentElement.style.setProperty(
-      "--block-background",
+      "--main-color",
 
       decodeURIComponent(attr_property)
     );
-    bgcolor = attr_property;
+    maincolor = attr_property;
     if (precolorBtn != null)
-      colorBtn[1].setAttribute("value", decodeURIComponent(bgcolor));
+      colorBtn[1].setAttribute("value", decodeURIComponent(maincolor));
   }
-  if (attr_name == "txtcolor") {
+  if (attr_name == "secondcolor") {
     document.documentElement.style.setProperty(
-      "--text-color",
+      "--second-color",
       decodeURIComponent(attr_property)
     );
-    txtcolor = attr_property;
+    secondcolor = attr_property;
     if (precolorBtn != null)
-      colorBtn[3].setAttribute("value", decodeURIComponent(txtcolor));
+      colorBtn[3].setAttribute("value", decodeURIComponent(secondcolor));
   }
-  if (attr_name == "sbcolor") {
+  if (attr_name == "thirdcolor") {
     document.documentElement.style.setProperty(
-      "--green-background-color",
+      "--third-color",
       decodeURIComponent(attr_property)
     );
-    sbcolor = attr_property;
+    thirdcolor = attr_property;
     if (precolorBtn != null)
-      colorBtn[5].setAttribute("value", decodeURIComponent(sbcolor));
+      colorBtn[5].setAttribute("value", decodeURIComponent(thirdcolor));
   }
 }
 colorURL = "";
-colorURL += "&bgcolor=" + bgcolor;
-colorURL += "&txtcolor=" + txtcolor;
-colorURL += "&sbcolor=" + sbcolor;
+colorURL += "&maincolor=" + maincolor;
+colorURL += "&secondcolor=" + secondcolor;
+colorURL += "&thirdcolor=" + thirdcolor;
 
 if (get_only_color.length > 0) {
   for (var i = 0; i < statusBarBtn.length; i++) {

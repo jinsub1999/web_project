@@ -25,7 +25,7 @@
   padding: 5px;
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid silver;
+  border: 1px solid var(--border-color);
   overflow: hidden;
 }
 
@@ -51,8 +51,8 @@
   height: 90%;
   padding: 10px;
   border-radius: 20px;
-  background-color: slategrey;
-  border: 1px solid slateblue;
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   margin-left: 35px;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .artist-talk__name {
-  color: var(--text-color);
-  background-color: var(--text-bgcolor);
+  color: black;
+  background-color: var(--third-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@
   width: 310px;
   margin-left: 5px;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   z-index: 60;
   position: absolute;
@@ -139,7 +139,7 @@
   position: relative;
 }
 .review-input label[for="user_pic"] {
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   margin: 5px;
   width: 90px;
   display: flex;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,129 +42,130 @@
     </div>
 
     <div class="my_scrollbar personal_settings__scrollbar">
-      <div class="themebox">
-        <div class="themebox_presetname">
-          Preset : Default
-        </div>
-        <div class="themebox_element maincolor">
-          maincolor
-          <div class="themebox_preview maincolor_preview">
-
+      <form method="GET">
+        <div class="themebox">
+          <div class="themebox_presetname">Preset : Default</div>
+          <div class="themebox_element">
+            Main Color
+            <div class="themebox_preview default-main"></div>
           </div>
-        </div>
-        <div class="themebox_element subcolor">
-          subcolor
-          <div class="themebox_preview subcolor_preview">
-
+          <div class="themebox_element">
+            Second Color
+            <div class="themebox_preview default-second"></div>
           </div>
-        </div>
-        <div class="themebox_apply">
-          APPLY
-        </div>
-      </div>
-      <div class="themebox">
-        <div class="themebox_presetname">
-          Preset : Orange
-        </div>
-        <div class="themebox_element maincolor">
-          maincolor
-          <div class="themebox_preview maincolor_preview">
-
+          <div class="themebox_element">
+            Third Color
+            <div class="themebox_preview default-third"></div>
           </div>
+          <a class="themebox_apply" href="?">APPLY</a>
         </div>
-        <div class="themebox_element subcolor">
-          subcolor
-          <div class="themebox_preview subcolor_preview">
-
+      </form>
+      <form method="GET">
+        <div class="themebox">
+          <div class="themebox_presetname">Preset : Orange</div>
+          <div class="themebox_element">
+            Main Color
+            <div class="themebox_preview orange-main"></div>
           </div>
-        </div>
-        <div class="themebox_apply">
-          APPLY
-        </div>
-      </div>
-      <div class="themebox">
-        <div class="themebox_presetname">
-          Preset : Grape
-        </div>
-        <div class="themebox_element maincolor">
-          maincolor
-          <div class="themebox_preview maincolor_preview">
-
+          <div class="themebox_element">
+            Second Color
+            <div class="themebox_preview orange-second"></div>
           </div>
-        </div>
-        <div class="themebox_element subcolor">
-          subcolor
-          <div class="themebox_preview subcolor_preview">
-
+          <div class="themebox_element">
+            Third Color
+            <div class="themebox_preview orange-third"></div>
           </div>
+          <a class="themebox_apply" href="?">APPLY</a>
         </div>
-        <div class="themebox_apply">
-          APPLY
-        </div>
-      </div>
-      <div class="themebox">
-        <div class="themebox_presetname">
-          Preset : City
-        </div>
-        <div class="themebox_element maincolor">
-          maincolor
-          <div class="themebox_preview maincolor_preview">
-
+      </form>
+      <form method="GET">
+        <div class="themebox">
+          <div class="themebox_presetname">Preset : Metalic</div>
+          <div class="themebox_element">
+            Main Color
+            <div class="themebox_preview metalic-main"></div>
           </div>
-        </div>
-        <div class="themebox_element subcolor">
-          subcolor
-          <div class="themebox_preview subcolor_preview">
-
+          <div class="themebox_element">
+            Second Color
+            <div class="themebox_preview metalic-second"></div>
           </div>
-        </div>
-        <div class="themebox_apply">
-          APPLY
-        </div>
-      </div>
-      <div class="themebox">
-        <div class="themebox_presetname">
-          Preset : Wine
-        </div>
-        <div class="themebox_element maincolor">
-          maincolor
-          <div class="themebox_preview maincolor_preview">
-
+          <div class="themebox_element">
+            Third Color
+            <div class="themebox_preview metalic-third"></div>
           </div>
+          <a class="themebox_apply" href="?">APPLY</a>
         </div>
-        <div class="themebox_element subcolor">
-          subcolor
-          <div class="themebox_preview subcolor_preview">
-
+      </form>
+      <form method="GET">
+        <div class="themebox">
+          <div class="themebox_presetname">Preset : City</div>
+          <div class="themebox_element">
+            Main Color
+            <div class="themebox_preview city-main"></div>
           </div>
+          <div class="themebox_element">
+            Second Color
+            <div class="themebox_preview city-second"></div>
+          </div>
+          <div class="themebox_element">
+            Third Color
+            <div class="themebox_preview city-third"></div>
+          </div>
+          <a class="themebox_apply" href="?">APPLY</a>
         </div>
-        <div class="themebox_apply">
-          APPLY
+      </form>
+      <form method="GET">
+        <div class="themebox">
+          <div class="themebox_presetname">Preset : Wine</div>
+          <div class="themebox_element">
+            Main Color
+            <div class="themebox_preview wine-main"></div>
+          </div>
+          <div class="themebox_element">
+            Second Color
+            <div class="themebox_preview wine-second"></div>
+          </div>
+          <div class="themebox_element">
+            Third Color
+            <div class="themebox_preview wine-third"></div>
+          </div>
+          <a class="themebox_apply" href="?">APPLY</a>
         </div>
-      </div>
+      </form>
     </div>
     <div class="your_own_settings">
       <div class="screen_title screen_subtitle">
-        make your theme on your own
+        Make your theme on your own
       </div>
       <div class="personal-settings-box">
         <form class="personal-settings" method="GET">
-          <label for="personal-settings__bgcolor">background color</label>
-          <input id="personal-settings__bgcolor" type="color" name="bgcolor" />
-          <label for="personal-settings__txtcolor">text color</label>
-          <input id="personal-settings__txtcolor" type="color" name="txtcolor" />
-          <label for="personal-settings__sbcolor">statusbar color</label>
-          <input id="personal-settings__sbcolor" type="color" name="sbcolor" />
-          <button id="formSubmit">
+          <label for="personal-settings__maincolor">Main Color</label>
+          <input
+            id="personal-settings__maincolor"
+            type="color"
+            name="maincolor"
+          />
+          <label for="personal-settings__secondcolor">Second Color</label>
+          <input
+            id="personal-settings__secondcolor"
+            type="color"
+            name="secondcolor"
+          />
+          <label for="personal-settings__thirdcolor">Third Color</label>
+          <input
+            id="personal-settings__thirdcolor"
+            type="color"
+            name="thirdcolor"
+          />
+          <button id="formSubmit">Apply my color</button>
         </form>
       </div>
     </div>
-    
+
     <div class="poweredBy">Powered By Melon.</div>
 
     <!-- <div class="reached_min_size">Your screen is too small.</div> -->
   </body>
-  <script src="./js/ps_script.js"></script>
   <script src="./js/add_ps_refresh_script.js"></script>
-
+  <script src="./js/apply_presets_script.js"></script>
 </html>
