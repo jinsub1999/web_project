@@ -9,5 +9,13 @@
 }
 
 .my-button-style:hover {
+  background-color: var(--main-color);
+}
+
+.melonbutton {
+  background-color: var(--second-color);
+}
+
+.melonbutton:hover {
   background-color: var(--third-color);
 }
