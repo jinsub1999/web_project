@@ -1,5 +1,6 @@
 .bigroundbtn {
   background-color: var(--main-color);
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,4 +9,8 @@
   border-radius: 50%;
   width: 400px;
   height: 400px;
+}
+
+.bigroundbtn:hover {
+  background-color: var(--second-color);
 }
