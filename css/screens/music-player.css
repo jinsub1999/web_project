@@ -144,3 +144,66 @@
   font-size: 15px;
   opacity: 0.7;
 }
+
+.addmusicbox {
+  border: 1px solid var(--border-color);
+  background-color: var(--main-color);
+  display: flex;
+  width: 800px;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 15px;
+}
+.addmusicbox_inputs {
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+}
+.addmusicbox_inputs_label {
+  margin: 10px;
+}
+.addmusicbox_submixbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 160px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--second-color);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.addmusicbox_clearbtn {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 160px;
+  position: absolute;
+  bottom: 5px;
+  right: 175px;
+  border: 1px solid var(--border-color);
+  background-color: var(--second-color);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.addmusicbox_submixbtn:hover {
+  background-color: var(--third-color);
+}
+
+.addmusicbox_clearbtn:hover {
+  background-color: var(--third-color);
+}
+
+.play-link {
+  display: none;
+}

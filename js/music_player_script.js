@@ -6,7 +6,9 @@ let assignMUSICS = function () {
   let playing_music_img = document.querySelector("#playing_music_img");
   let playing_music_title = document.querySelector(".playing_music_title");
   let playing_music_artist = document.querySelector(".playing_music_artist");
-
+  let playing_bar = document.querySelector(
+    ".music-player__control-bar > iframe"
+  );
   let play_btns = document.querySelectorAll(".music_player__music-box");
   while (music_list.length) music_list.pop();
   while (play_btns_eventFunction.length) play_btns_eventFunction.pop();
@@ -17,8 +19,15 @@ let assignMUSICS = function () {
     var elem_title = elem.children[1].children[0];
     var elem_artist = elem.children[2].children[0];
     var elem_playbtn = elem.children[3];
+    var elem_playlink = elem.children[4];
 
-    music_list.push([elem_img, elem_title, elem_artist, elem_playbtn, i]);
+    music_list.push([
+      elem_img,
+      elem_title,
+      elem_artist,
+      elem_playbtn,
+      elem_playlink,
+    ]);
   }
 
   var myindx = 0;
@@ -32,6 +41,7 @@ let assignMUSICS = function () {
         );
         playing_music_title.innerHTML = music_list[queryNum][1].innerHTML;
         playing_music_artist.innerHTML = music_list[queryNum][2].innerHTML;
+        playing_bar.src = music_list[queryNum][4].innerHTML;
       });
     }
   };
@@ -66,7 +76,7 @@ let assignMUSICS = function () {
 let scrollBox = document.querySelector(".music_scrollbar");
 // make music box by js
 
-let makeMusicBox = function (imgsrc__, title__, artist__) {
+let makeMusicBox = function (imgsrc__, title__, artist__, playlink__) {
   let musicBox_a = document.createElement("div");
   musicBox_a.classList.add("music_player__music-box");
 
@@ -97,11 +107,17 @@ let makeMusicBox = function (imgsrc__, title__, artist__) {
   music_playicon_a.classList.add("fa-play");
   music_playit_a.appendChild(music_playicon_a);
   musicBox_a.appendChild(music_playit_a);
+
+  let music_playlink_a = document.createElement("div");
+  music_playlink_a.classList.add("play-link");
+  music_playlink_a.innerHTML = playlink__;
+  musicBox_a.appendChild(music_playlink_a);
+
   return musicBox_a;
 };
 
-let addMusicToPlaylist = function (imgsrc__, title__, artist__) {
-  scrollBox.appendChild(makeMusicBox(imgsrc__, title__, artist__));
+let addMusicToPlaylist = function (imgsrc__, title__, artist__, playlink__) {
+  scrollBox.appendChild(makeMusicBox(imgsrc__, title__, artist__, playlink__));
 };
 addMusicToPlaylist(
   "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/375/258/80375258_1381488898413_1_600x600.JPG/dims/resize/Q_80,0",
@@ -113,4 +129,32 @@ let resetPlaylist = function () {
   while (scrollBox.firstChild) {
     scrollBox.removeChild(scrollBox.firstChild);
   }
+  let playing_music_img = document
+    .querySelector("#playing_music_img")
+    .setAttribute("src", "#");
+  document.querySelector(".playing_music_title").innerHTML = "Press Any Music";
+  document.querySelector(".playing_music_artist").innerHTML = "...";
 };
+
+let pressingImport = function () {
+  let wantedLink = document.getElementById("music_link_a");
+  let wantedTitle = document.getElementById("music_title_a");
+  let wantedArtist = document.getElementById("music_artist_a");
+
+  let presumedIMG =
+    "https://img.youtube.com/vi/" + wantedLink.value + "/mqdefault.jpg";
+  let videoLink =
+    "https://www.youtube.com/embed/" + wantedLink.value + "?controls=0";
+  addMusicToPlaylist(
+    presumedIMG,
+    wantedTitle.value,
+    wantedArtist.value,
+    videoLink
+  );
+  wantedTitle.value = "";
+  wantedArtist.value = "";
+  wantedLink.value = "";
+
+  assignMUSICS();
+};
+//yAhbFBb7VUI

@@ -50,7 +50,7 @@
           <iframe
             width="400"
             height="100"
-            src="https://www.youtube.com/embed/LNq4xox99HY?controls=0"
+            src=""
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -70,6 +70,7 @@
             <span class="music_artist">Maria Takeuchi</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">3bNITQR4Uso</div>
         </div>
         <div class="music_player__music-box">
           <img
@@ -82,6 +83,7 @@
             <span class="music_artist">The Strokes</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">LNq4xox99HY</div>
         </div>
         <div class="music_player__music-box">
           <img
@@ -96,6 +98,7 @@
             <span class="music_artist">수퍼비</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">PjwptpBk9BM</div>
         </div>
         <div class="music_player__music-box">
           <img
@@ -108,6 +111,7 @@
             <span class="music_artist">창모 (CHANGMO)</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">_50jtkDnObw</div>
         </div>
         <div class="music_player__music-box">
           <img
@@ -120,6 +124,7 @@
             <span class="music_artist">브로콜리너마저</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">bMyai7Matyc</div>
         </div>
         <div class="music_player__music-box">
           <img
@@ -132,10 +137,24 @@
             <span class="music_artist">Radiohead</span>
           </div>
           <div class="play-it"><i class="fas fa-play"></i></div>
+          <div class="play-link">DExBeFCx3mQ</div>
         </div>
       </div>
     </div>
-
+    <div class="addmusicbox">
+      <div class="addmusicbox_clearbtn" onclick="resetPlaylist()">
+        Clear Playlist
+      </div>
+      <div class="addmusicbox_submixbtn" onclick="pressingImport()">
+        Import Youtube contents
+      </div>
+      <div class="addmusicbox_inputs_label">Youtube video ID</div>
+      <input class="addmusicbox_inputs" id="music_link_a" type="text" />
+      <div class="addmusicbox_inputs_label">Music name</div>
+      <input class="addmusicbox_inputs" id="music_title_a" type="text" />
+      <div class="addmusicbox_inputs_label">Artist name</div>
+      <input class="addmusicbox_inputs" id="music_artist_a" type="text" />
+    </div>
     <div class="poweredBy">powered by Melon, Genie.</div>
 
     <!-- <div class="reached_min_size">Your screen is too small.</div> -->
