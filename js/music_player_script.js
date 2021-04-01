@@ -132,6 +132,7 @@ let resetPlaylist = function () {
     .setAttribute("src", "#");
   document.querySelector(".playing_music_title").innerHTML = "Press Any Music";
   document.querySelector(".playing_music_artist").innerHTML = "...";
+  document.querySelector(".music-player__control-bar > iframe").src = "";
 };
 
 let pressingImport = function () {
@@ -147,7 +148,7 @@ let pressingImport = function () {
     presumedIMG,
     wantedTitle.value,
     wantedArtist.value,
-    wantedLink
+    wantedLink.value
   );
   wantedTitle.value = "";
   wantedArtist.value = "";
