@@ -41,7 +41,10 @@ let assignMUSICS = function () {
         );
         playing_music_title.innerHTML = music_list[queryNum][1].innerHTML;
         playing_music_artist.innerHTML = music_list[queryNum][2].innerHTML;
-        playing_bar.src = music_list[queryNum][4].innerHTML;
+        playing_bar.src =
+          "https://www.youtube.com/embed/" +
+          music_list[queryNum][4].innerHTML +
+          "?controls=0";
       });
     }
   };
@@ -119,11 +122,6 @@ let makeMusicBox = function (imgsrc__, title__, artist__, playlink__) {
 let addMusicToPlaylist = function (imgsrc__, title__, artist__, playlink__) {
   scrollBox.appendChild(makeMusicBox(imgsrc__, title__, artist__, playlink__));
 };
-addMusicToPlaylist(
-  "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/375/258/80375258_1381488898413_1_600x600.JPG/dims/resize/Q_80,0",
-  "스물다섯, 스물하나",
-  "자우림"
-);
 assignMUSICS();
 let resetPlaylist = function () {
   while (scrollBox.firstChild) {
@@ -149,7 +147,7 @@ let pressingImport = function () {
     presumedIMG,
     wantedTitle.value,
     wantedArtist.value,
-    videoLink
+    wantedLink
   );
   wantedTitle.value = "";
   wantedArtist.value = "";
