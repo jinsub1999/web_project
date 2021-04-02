@@ -1,6 +1,8 @@
 let statusBarBtn = document.querySelectorAll(".status-bar .status-bar__btn");
 let otherBtn = document.querySelectorAll(".user_info__column a");
-let otherBtn2 = document.querySelectorAll(".artist-talk a");
+let otherBtn2 = document.querySelectorAll(
+  ".artist-talk a.my-button-style.my-btn-black"
+);
 let precolorBtn = document.querySelector(".personal-settings");
 let colorBtn;
 
